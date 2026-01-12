@@ -42,7 +42,7 @@ export const siteConfig = {
       href: "/access-consulting",
     },
     {
-      title: "Plan Implementation Support",
+      title: "",
       description: "Comprehensive assistance in putting your NDIS plan into action and achieving your goals.",
       icon: "check",
     },

@@ -12,15 +12,15 @@ export function Footer() {
           <div>
             <div className="mb-4 flex items-center justify-center">
               <Image
-                src="/Vista Logos (2)/transparent-logo.svg"
+                src="/Vista Logos (2)/transparent-logo.png"
                 alt={siteConfig.businessName}
-                width={100}
-                height={100}
+                width={140}
+                height={140}
                 priority
               />
              </div>
 
-            <p className="text-sm">
+            <p className="text-sm text-center">
               <strong>ABN:</strong><br/>
               <span className="text-gray-700">{siteConfig.abnRegistration}</span>
             </p>
@@ -28,12 +28,12 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+            <h4 className="text-lg text-center font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                {href: "#services", label: "Services"},
-                {href: "#eligibility", label: "Eligibility"},
-                {href: "#faq", label: "FAQ"},
+                {href: "/support-coordination", label: "Support Coordination"},
+                {href: "/access-consulting", label: "Access Consulting"},
+                {href: "/fee-schedule", label: "Fee Schedule"},
                 {href: "#contact", label: "Contact"},
               ].map((link) => (
                 <li key={link.href}>
@@ -50,7 +50,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
+            <h4 className="text-lg text-center font-bold mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-gray-700 flex-shrink-0"/>
@@ -79,8 +79,8 @@ export function Footer() {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Follow Us</h4>
-            <div className="flex gap-4">
+            <h4 className="text-lg text-center font-bold mb-4">Follow Us</h4>
+            <div className="flex justify-center gap-4">
               <a
                 href={siteConfig.social.facebook}
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-all hover:scale-110"
@@ -113,12 +113,12 @@ export function Footer() {
           </p>
           <p>
             © {currentYear} {siteConfig.businessName}. All rights reserved. |{" "}
-            <a href="#" className="hover:text-orange-500 transition-colors underline">
+            <a href="/privacy-policy" className="hover:text-orange-500 transition-colors underline">
               Privacy Policy
             </a>{" "}
             |{" "}
-            <a href="#" className="hover:text-orange-500 transition-colors underline">
-              Terms of Service
+            <a href="/disclaimer" className="hover:text-orange-500 transition-colors underline">
+              Disclaimer
             </a>
           </p>
         </div>

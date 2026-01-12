@@ -1,11 +1,19 @@
 import { Users, Activity, CheckCircle } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import Image from "next/image";
 
 const iconMap = {
   users: Users,
   activity: Activity,
   check: CheckCircle,
 };
+
+// Service images mapping
+const serviceImages = [
+  "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop"
+];
 
 export function Services() {
   return (
@@ -23,9 +31,22 @@ export function Services() {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             const content = (
               <>
-                <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
-                  <Icon className="text-white" size={40} />
+                {/* Service Image */}
+                <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+                  <Image
+                    src={serviceImages[index] || serviceImages[0]}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  {/* Icon Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end justify-center pb-4">
+                    <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                      <Icon className="text-white group-hover:text-orange-500 transition-colors" size={32} />
+                    </div>
+                  </div>
                 </div>
+
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
                   {service.title}
                 </h3>

@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { Check, Phone, LucideMail } from "lucide-react";
+import { siteConfig} from "@/config/site";
 
 export function CallbackForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -135,14 +136,14 @@ export function CallbackForm() {
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
                   <Phone className="text-gray-900" size={16} />
                 </div>
-                <span className="text-lg">Phone Number</span>
+                <span className="text-lg">{siteConfig.phone}</span>
               </div>
 
               <div className='flex items-center gap-3'>
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
                   <LucideMail className="text-gray-900" size={16} />
                 </div>
-                <span className="text-lg">Email</span>
+                <span className="text-lg">{siteConfig.email}</span>
               </div>
             </ul>
           </div>
@@ -158,7 +159,7 @@ export function CallbackForm() {
                   Thank You!
                 </h3>
                 <p className="text-gray-600">
-                  We'll contact you within 24 hours.
+                  We&#39;ll contact you within 24 hours.
                 </p>
               </div>
             ) : (
@@ -234,9 +235,9 @@ export function CallbackForm() {
                     >
                       <option value="">Please select</option>
                       <option value="yes-plan">Yes, I have an active NDIS plan</option>
-                      <option value="approved-no-plan">I'm approved but need help creating my plan</option>
-                      <option value="applying">I'm currently applying for NDIS</option>
-                      <option value="not-yet">Not yet, I'm exploring my options</option>
+                      <option value="approved-no-plan">I&#39;m approved but need help creating my plan</option>
+                      <option value="applying">I&#39;m currently applying for NDIS</option>
+                      <option value="not-yet">Not yet, I&#39;m exploring my options</option>
                     </select>
                   </div>
 
@@ -254,7 +255,7 @@ export function CallbackForm() {
                       <option value="support-coordination">Support Coordination</option>
                       <option value="specialist-coordination">Specialist Support Coordination</option>
                       <option value="plan-management">Plan Management</option>
-                      <option value="not-sure">I'm not sure yet - need guidance</option>
+                      <option value="not-sure">I&#39;m not sure yet - need guidance</option>
                     </select>
                   </div>
 
@@ -269,7 +270,7 @@ export function CallbackForm() {
                     >
                       <option value="">Please select</option>
                       <option value="no">No, this is my first time</option>
-                      <option value="yes-switching">Yes, I'm looking to switch coordinators</option>
+                      <option value="yes-switching">Yes, I&#39;m looking to switch coordinators</option>
                       <option value="yes-additional">Yes, but I need additional support</option>
                     </select>
                   </div>

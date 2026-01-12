@@ -1,9 +1,24 @@
 import { siteConfig } from "@/config/site";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-20 md:py-32">
-      <div className="container mx-auto px-4">
+    <section id="home" className="relative text-white py-20 md:py-32 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1445633629932-0029acc44e88?w=1920&h=1080&fit=crop"
+          alt="NDIS Support Services"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-gray-800/80 to-gray-900/85"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
             {siteConfig.hero.title}

@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallbackForm } from "@/components/CallbackForm";
 import { CheckCircle, Users, Target, HeartHandshake } from "lucide-react";
+import Image from "next/image";
 
 export default function SupportCoordination() {
   const features = [
@@ -60,16 +61,26 @@ export default function SupportCoordination() {
       {/* What It Is Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              What It Is
-            </h2>
-            <p className="text-lg text-gray-600 text-center leading-relaxed">
-              Support Coordination is non-clinical support designed to help you understand
-              and implement your NDIS plan. We work with you to interpret your funding,
-              connect with appropriate service providers, and monitor your progress toward
-              achieving your goals.
-            </p>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                What It Is
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Support Coordination is non-clinical support designed to help you understand
+                and implement your NDIS plan. We work with you to interpret your funding,
+                connect with appropriate service providers, and monitor your progress toward
+                achieving your goals.
+              </p>
+            </div>
+            <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
+                alt="Support coordination services"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

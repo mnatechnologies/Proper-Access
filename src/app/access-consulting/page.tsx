@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallbackForm } from "@/components/CallbackForm";
 import { CheckCircle, FileText, Users, ClipboardCheck, Calendar, BookOpen } from "lucide-react";
+import Image from "next/image";
 
 export default function AccessConsulting() {
   const includedServices = [
@@ -78,19 +79,29 @@ export default function AccessConsulting() {
       {/* What It Is Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              What It Is
-            </h2>
-            <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
-              <p>
-                Access and Review Consulting provides structured guidance for individuals and families
-                who are navigating NDIS access, internal reviews, or plan reassessments and need
-                clarity around eligibility, evidence, and process.
-              </p>
-              <p className="font-semibold text-gray-900">
-                This service focuses on preparation and system navigation, not decision-making.
-              </p>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg order-2 md:order-1">
+              <Image
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop"
+                alt="Access consulting and review support"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                What It Is
+              </h2>
+              <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+                <p>
+                  Access and Review Consulting provides structured guidance for individuals and families
+                  who are navigating NDIS access, internal reviews, or plan reassessments and need
+                  clarity around eligibility, evidence, and process.
+                </p>
+                <p className="font-semibold text-gray-900">
+                  This service focuses on preparation and system navigation, not decision-making.
+                </p>
+              </div>
             </div>
           </div>
         </div>
