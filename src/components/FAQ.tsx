@@ -8,12 +8,12 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 bg-gray-50">
+    <section id="faq" className="py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+        <h2 className="text-4xl font-bold text-center text-white mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-white mb-12 max-w-2xl mx-auto">
           Get answers to common questions about NDIS Support Coordination
         </p>
 

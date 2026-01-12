@@ -21,11 +21,8 @@ export function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {siteConfig.services.map((service, index) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
-            return (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
-              >
+            const content = (
+              <>
                 <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
                   <Icon className="text-white" size={40} />
                 </div>
@@ -35,6 +32,30 @@ export function Services() {
                 <p className="text-gray-600 text-center leading-relaxed">
                   {service.description}
                 </p>
+                {service.href && (
+                  <div className="mt-6 text-center">
+                    <span className="text-orange-500 font-semibold group-hover:text-gray-900 transition-colors">
+                      Learn More →
+                    </span>
+                  </div>
+                )}
+              </>
+            );
+
+            return service.href ? (
+              <a
+                key={index}
+                href={service.href}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group block"
+              >
+                {content}
+              </a>
+            ) : (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
+              >
+                {content}
               </div>
             );
           })}

@@ -1,11 +1,10 @@
-// Site Configuration - Edit this file to customize for different websites
 export const siteConfig = {
   // Business Information
   businessName: "NDIS Support Coordinator",
   phone: "1300 000 000",
   email: "Idraftplans@supportcoordinator.com.au",
   serviceArea: "Servicing Australia Wide",
-  ndisRegistration: "[12345]",
+  abnRegistration: "[12345]",
 
   // Colors - Tailwind classes
   colors: {
@@ -24,8 +23,8 @@ export const siteConfig = {
 
   // Hero Section
   hero: {
-    title: "Expert NDIS Support Coordination",
-    subtitle: "Empowering you to navigate your NDIS journey with confidence and dignity",
+    title: "Proper Access",
+    subtitle: "Independent NDIS Support Coordination and Access/Review Consulting",
   },
 
   // Services
@@ -34,15 +33,17 @@ export const siteConfig = {
       title: "NDIS Support Coordination",
       description: "Expert guidance to help you understand and implement your NDIS plan effectively.",
       icon: "users",
+      href: "/support-coordination",
     },
     {
-      title: "Specialist Support Coordination",
-      description: "Intensive coordination for participants with complex support needs.",
+      title: "Access & Review Consulting",
+      description: "Structured guidance for navigating NDIS access, internal reviews, and plan reassessments.",
       icon: "activity",
+      href: "/access-consulting",
     },
     {
-      title: "Plan Management",
-      description: "Complete management of your NDIS funding and provider payments.",
+      title: "Plan Implementation Support",
+      description: "Comprehensive assistance in putting your NDIS plan into action and achieving your goals.",
       icon: "check",
     },
   ],

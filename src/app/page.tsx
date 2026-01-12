@@ -15,8 +15,8 @@ export default function Home() {
       <Hero />
       <Services />
       <EligibilitySteps />
-      <FAQ />
       <CallbackForm />
+      <FAQ />
       <Footer />
     </div>
   );

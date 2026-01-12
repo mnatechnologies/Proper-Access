@@ -31,7 +31,7 @@ export function EligibilitySteps() {
     <section id="eligibility" className="py-20 bg-gradient-to-tr from-gray-900 via-gray-700 to-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-4">
-          Find Out If You're Eligible for the NDIS
+          Find Out If You&#39;re Eligible for the NDIS
         </h2>
         <p className="text-center text-white mb-12 max-w-2xl mx-auto">
           Follow these simple steps to check your eligibility and get started
@@ -44,7 +44,7 @@ export function EligibilitySteps() {
                 {step.number}
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-gray-500 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {step.title}
                 </h3>
                 <p className="text-gray-300 leading-relaxed">

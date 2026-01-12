@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Check } from "lucide-react";
+import { Check, Phone, LucideMail } from "lucide-react";
 
 export function CallbackForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -107,7 +107,7 @@ export function CallbackForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white">
+    <section id="contact" className="py-20 bg-gray-50 text-gray-900">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Info Side */}
@@ -131,11 +131,24 @@ export function CallbackForm() {
                   <span className="text-lg">{benefit}</span>
                 </li>
               ))}
+              <div className='flex items-center gap-3'>
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
+                  <Phone className="text-gray-900" size={16} />
+                </div>
+                <span className="text-lg">Phone Number</span>
+              </div>
+
+              <div className='flex items-center gap-3'>
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
+                  <LucideMail className="text-gray-900" size={16} />
+                </div>
+                <span className="text-lg">Email</span>
+              </div>
             </ul>
           </div>
 
           {/* Form Side */}
-          <div className="bg-white rounded-lg p-8 shadow-2xl">
+          <div className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 rounded-lg p-8 shadow-2xl">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -151,46 +164,49 @@ export function CallbackForm() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
                     Full Name *
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
+                    placeholder="Name"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
                     Email Address *
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
+                    placeholder="Email"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
                     Phone Number *
                   </label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
+                    placeholder="Phone"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="location" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="location" className="block text-sm font-semibold text-white mb-2">
                     Location
                   </label>
                   <input
@@ -198,23 +214,23 @@ export function CallbackForm() {
                     id="location"
                     name="location"
                     placeholder="City or postcode"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
                 {/* Qualifying Questions - Feel helpful, not salesy */}
                 <div className="pt-2 border-t border-gray-200">
-                  <p className="text-sm text-gray-600 mb-4">Help us understand how we can best support you:</p>
+                  <p className="text-sm text-white mb-4">Help us understand how we can best support you:</p>
 
                   <div className="mb-5">
-                    <label htmlFor="ndis-status" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="ndis-status" className="block text-sm font-semibold text-white mb-2">
                       Do you currently have an NDIS plan? *
                     </label>
                     <select
                       id="ndis-status"
                       name="ndis-status"
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="yes-plan">Yes, I have an active NDIS plan</option>
@@ -225,14 +241,14 @@ export function CallbackForm() {
                   </div>
 
                   <div className="mb-5">
-                    <label htmlFor="support-type" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="support-type" className="block text-sm font-semibold text-white mb-2">
                       What type of support are you looking for? *
                     </label>
                     <select
                       id="support-type"
                       name="support-type"
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="support-coordination">Support Coordination</option>
@@ -243,13 +259,13 @@ export function CallbackForm() {
                   </div>
 
                   <div className="mb-5">
-                    <label htmlFor="previous-coordinator" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="previous-coordinator" className="block text-sm font-semibold text-white mb-2">
                       Have you worked with a Support Coordinator before?
                     </label>
                     <select
                       id="previous-coordinator"
                       name="previous-coordinator"
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="no">No, this is my first time</option>
@@ -259,13 +275,13 @@ export function CallbackForm() {
                   </div>
 
                   <div className="mb-5">
-                    <label htmlFor="current-challenge" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="current-challenge" className="block text-sm font-semibold text-white mb-2">
                       When are you looking to get started?
                     </label>
                     <select
                       id="current-challenge"
                       name="current-challenge"
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="urgent">As soon as possible</option>
@@ -276,7 +292,7 @@ export function CallbackForm() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
                     Tell us a bit more about your situation (optional)
                   </label>
                   <textarea
@@ -284,18 +300,18 @@ export function CallbackForm() {
                     name="message"
                     rows={4}
                     placeholder="Any additional information that would help us assist you better..."
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors resize-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors resize-none"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="preferred-time" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="preferred-time" className="block text-sm font-semibold text-white mb-2">
                     Preferred Call Time
                   </label>
                   <select
                     id="preferred-time"
                     name="preferred-time"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
                   >
                     <option value="">Select a time</option>
                     <option value="morning">Morning (9am - 12pm)</option>

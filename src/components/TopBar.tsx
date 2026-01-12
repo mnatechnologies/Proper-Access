@@ -9,14 +9,14 @@ export function TopBar() {
           <div className="flex flex-wrap items-center gap-4 md:gap-6">
             <a
               href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
-              className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+              className="flex items-center gap-2 hover:text-orange-500 transition-colors"
             >
               <Phone size={16} />
               {siteConfig.phone}
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+              className="flex items-center gap-2 hover:text-orange-500 transition-colors"
             >
               <Mail size={16} />
               {siteConfig.email}

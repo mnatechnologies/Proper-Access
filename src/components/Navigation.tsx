@@ -9,7 +9,7 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#home", label: "Home" },
+    { href: "/", label: "Home" },
     { href: "#services", label: "Services" },
     { href: "#eligibility", label: "Eligibility" },
     { href: "#faq", label: "FAQ" },
@@ -22,7 +22,7 @@ export function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Image
-            src="/Vista Logos (1)/colored-logo.png"
+            src="/Vista Logos (2)/colored-logo.png"
             alt={siteConfig.businessName}
             width={100}
             height={100}
