@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { Check, Phone, LucideMail } from "lucide-react";
 import { siteConfig} from "@/config/site";
+import Image from "next/image";
 
 export function CallbackForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -110,9 +111,9 @@ export function CallbackForm() {
   return (
     <section id="contact" className="py-20 bg-gray-50 text-gray-900">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
           {/* Info Side */}
-          <div>
+          <div className="flex flex-col">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-lg mb-8 opacity-90">
               Request a call back and one of our experienced Support Coordinators will contact you within 24 hours to discuss your needs.
@@ -126,26 +127,36 @@ export function CallbackForm() {
                 "Australia wide service",
               ].map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                    <Check className="text-gray-900" size={16} />
+                  <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
+                    <Check className="text-white" size={16} />
                   </div>
                   <span className="text-lg">{benefit}</span>
                 </li>
               ))}
               <div className='flex items-center gap-3'>
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
-                  <Phone className="text-gray-900" size={16} />
+                <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
+                  <Phone className="text-white" size={16} />
                 </div>
                 <span className="text-lg">{siteConfig.phone}</span>
               </div>
 
               <div className='flex items-center gap-3'>
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
-                  <LucideMail className="text-gray-900" size={16} />
+                <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
+                  <LucideMail className="text-white" size={16} />
                 </div>
                 <span className="text-lg">{siteConfig.email}</span>
               </div>
             </ul>
+
+            {/* Supporting Image - fills remaining height */}
+            <div className="mt-8 relative flex-1 min-h-[200px] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/PA.jpeg"
+                alt="NDIS support meeting"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* Form Side */}
@@ -174,7 +185,7 @@ export function CallbackForm() {
                     name="name"
                     placeholder="Name"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
@@ -188,7 +199,7 @@ export function CallbackForm() {
                     name="email"
                     placeholder="Email"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
@@ -202,7 +213,7 @@ export function CallbackForm() {
                     name="phone"
                     placeholder="Phone"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
@@ -215,7 +226,7 @@ export function CallbackForm() {
                     id="location"
                     name="location"
                     placeholder="City or postcode"
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   />
                 </div>
 
@@ -231,7 +242,7 @@ export function CallbackForm() {
                       id="ndis-status"
                       name="ndis-status"
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="yes-plan">Yes, I have an active NDIS plan</option>
@@ -249,7 +260,7 @@ export function CallbackForm() {
                       id="support-type"
                       name="support-type"
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="support-coordination">Support Coordination</option>
@@ -266,7 +277,7 @@ export function CallbackForm() {
                     <select
                       id="previous-coordinator"
                       name="previous-coordinator"
-                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="no">No, this is my first time</option>
@@ -282,7 +293,7 @@ export function CallbackForm() {
                     <select
                       id="current-challenge"
                       name="current-challenge"
-                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                     >
                       <option value="">Please select</option>
                       <option value="urgent">As soon as possible</option>
@@ -301,7 +312,7 @@ export function CallbackForm() {
                     name="message"
                     rows={4}
                     placeholder="Any additional information that would help us assist you better..."
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors resize-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors resize-none"
                   />
                 </div>
 
@@ -312,7 +323,7 @@ export function CallbackForm() {
                   <select
                     id="preferred-time"
                     name="preferred-time"
-                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-orange-500 focus:outline-none text-gray-900 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   >
                     <option value="">Select a time</option>
                     <option value="morning">Morning (9am - 12pm)</option>
@@ -323,7 +334,7 @@ export function CallbackForm() {
 
                 <button
                   type="submit"
-                  className="w-full bg-orange-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-orange-600 transition-all hover:scale-105 shadow-lg"
+                  className="w-full bg-brand text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg"
                 >
                   Request Call Back
                 </button>

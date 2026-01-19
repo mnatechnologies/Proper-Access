@@ -40,7 +40,7 @@ export function EligibilitySteps() {
         <div className="max-w-4xl mx-auto space-y-8">
           {steps.map((step, index) => (
             <div key={index} className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+              <div className="flex-shrink-0 w-14 h-14 bg-brand rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
                 {step.number}
               </div>
               <div className="flex-1">
@@ -58,7 +58,7 @@ export function EligibilitySteps() {
         <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-block bg-orange-500 text-white px-10 py-4 rounded-md font-semibold text-lg hover:bg-orange-600 transition-all hover:scale-105 shadow-lg"
+            className="inline-block bg-brand text-white px-10 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg"
           >
             Check My Eligibility Now
           </a>

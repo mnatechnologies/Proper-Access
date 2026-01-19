@@ -67,7 +67,7 @@ export default function AccessConsulting() {
             <div className="animate-fadeInUp animation-delay-400">
               <a
                 href="#contact"
-                className="bg-orange-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-orange-600 transition-all hover:scale-105 shadow-lg inline-block"
+                className="bg-brand text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg inline-block"
               >
                 Book a Consultation
               </a>
@@ -125,7 +125,7 @@ export default function AccessConsulting() {
                   key={index}
                   className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
                 >
-                  <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
+                  <div className="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
                     <Icon className="text-white" size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
@@ -151,7 +151,7 @@ export default function AccessConsulting() {
               <div className="space-y-4">
                 {whoItsFor.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={24} />
+                    <CheckCircle className="text-brand flex-shrink-0 mt-1" size={24} />
                     <p className="text-lg">{item}</p>
                   </div>
                 ))}
@@ -165,17 +165,17 @@ export default function AccessConsulting() {
             </div>
 
             {/* How It's Delivered */}
-            <div className="bg-orange-600 p-10 rounded-lg dtext-white shadow-lg">
+            <div className="bg-brand p-10 rounded-lg text-white shadow-lg">
               <h2 className="text-3xl font-bold mb-6">How It&apos;s Delivered</h2>
               <div className="space-y-4">
                 {howDelivered.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+                    <CheckCircle className="text-black flex-shrink-0 mt-1" size={24} />
                     <p className="text-lg">{item}</p>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-orange-500">
+              <div className="mt-6 pt-6 border-t border-brand/70">
                 <p className="text-lg font-semibold mb-2">
                   Independent Service
                 </p>

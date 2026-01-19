@@ -39,7 +39,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-700 hover:text-orange-500 transition-colors"
+                    className="text-gray-700 hover:text-brand transition-colors"
                   >
                     {link.label}
                   </a>
@@ -56,7 +56,7 @@ export function Footer() {
                 <Phone size={16} className="text-gray-700 flex-shrink-0"/>
                 <a
                   href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
-                  className="text-gray-700 hover:text-orange-500 transition-colors"
+                  className="text-gray-700 hover:text-brand transition-colors"
                 >
                   {siteConfig.phone}
                 </a>
@@ -65,7 +65,7 @@ export function Footer() {
                 <Mail size={16} className="text-gray-700 flex-shrink-0"/>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="text-gray-700 hover:text-orange-500 transition-colors"
+                  className="text-gray-700 hover:text-brand transition-colors"
                 >
                   {siteConfig.email}
                 </a>
@@ -83,21 +83,21 @@ export function Footer() {
             <div className="flex justify-center gap-4">
               <a
                 href={siteConfig.social.facebook}
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-all hover:scale-110"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-brand transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook size={20}/>
               </a>
               <a
                 href={siteConfig.social.instagram}
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-all hover:scale-110"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-brand transition-all hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram size={20}/>
               </a>
               <a
                 href={siteConfig.social.linkedin}
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-all hover:scale-110"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-brand transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20}/>
@@ -113,11 +113,11 @@ export function Footer() {
           </p>
           <p>
             © {currentYear} {siteConfig.businessName}. All rights reserved. |{" "}
-            <a href="/privacy-policy" className="hover:text-orange-500 transition-colors underline">
+            <a href="/privacy-policy" className="hover:text-brand transition-colors underline">
               Privacy Policy
             </a>{" "}
             |{" "}
-            <a href="/disclaimer" className="hover:text-orange-500 transition-colors underline">
+            <a href="/disclaimer" className="hover:text-brand transition-colors underline">
               Disclaimer
             </a>
           </p>

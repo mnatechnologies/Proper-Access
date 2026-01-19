@@ -5,7 +5,6 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallbackForm } from "@/components/CallbackForm";
 import { CheckCircle, Users, Target, HeartHandshake } from "lucide-react";
-import Image from "next/image";
 
 export default function SupportCoordination() {
   const features = [
@@ -49,7 +48,7 @@ export default function SupportCoordination() {
             <div className="animate-fadeInUp animation-delay-400">
               <a
                 href="#contact"
-                className="bg-orange-500 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-orange-600 transition-all hover:scale-105 shadow-lg inline-block"
+                className="bg-brand text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg inline-block"
               >
                 Get Started
               </a>
@@ -61,26 +60,16 @@ export default function SupportCoordination() {
       {/* What It Is Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                What It Is
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Support Coordination is non-clinical support designed to help you understand
-                and implement your NDIS plan. We work with you to interpret your funding,
-                connect with appropriate service providers, and monitor your progress toward
-                achieving your goals.
-              </p>
-            </div>
-            <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop"
-                alt="Support coordination services"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              What It Is
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Support Coordination is non-clinical support designed to help you understand
+              and implement your NDIS plan. We work with you to interpret your funding,
+              connect with appropriate service providers, and monitor your progress toward
+              achieving your goals.
+            </p>
           </div>
         </div>
       </section>
@@ -103,7 +92,7 @@ export default function SupportCoordination() {
                   key={index}
                   className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
                 >
-                  <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
+                  <div className="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 transition-colors">
                     <Icon className="text-white" size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
@@ -128,11 +117,11 @@ export default function SupportCoordination() {
               <h2 className="text-3xl font-bold mb-6">Who It&apos;s For</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={24} />
                   <p className="text-lg">Self-managed participants</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={24} />
                   <p className="text-lg">Plan-managed participants</p>
                 </div>
               </div>
@@ -143,19 +132,19 @@ export default function SupportCoordination() {
             </div>
 
             {/* How It's Delivered */}
-            <div className="bg-orange-600 p-10 rounded-lg text-white shadow-lg">
+            <div className="bg-brand p-10 rounded-lg text-white shadow-lg">
               <h2 className="text-3xl font-bold mb-6">How It&apos;s Delivered</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle className="text-black flex-shrink-0 mt-1" size={24} />
                   <p className="text-lg">Collaboratively with you</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle className="text-black flex-shrink-0 mt-1" size={24} />
                   <p className="text-lg">In line with your plan goals</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle className="text-black flex-shrink-0 mt-1" size={24} />
                   <p className="text-lg">With ongoing communication</p>
                 </div>
               </div>

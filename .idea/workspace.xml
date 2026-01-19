@@ -4,20 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="some requested changes implemented">
+    <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="Most changes in place.">
+      <change afterPath="$PROJECT_DIR$/public/images/PA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PA2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PA3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PA4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/unnamed.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/unnamed1.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Vista Logos (2)/colored-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Vista Logos (2)/colored-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Vista Logos (2)/transparent-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Vista Logos (2)/transparent-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CallbackForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CallbackForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FAQ.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +35,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="56" />
+    <option name="cachedIndexableFilesCount" value="61" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -36,11 +45,17 @@
     <commands />
     <urls />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="3890JGUzYmrq27fWuhyQc1IWrkb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +75,7 @@
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/mark91/proper-access/public/Vista Logos (2)",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/mark91/proper-access/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -71,6 +86,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "wsl://Ubuntu@/home/mark91/.nvm/versions/node/v24.12.0/bin/node",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "settings.javascript.runtime",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "\\\\wsl.localhost\\Ubuntu\\home\\mark91\\proper-access\\node_modules\\typescript\\lib",
@@ -79,9 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\mark91\proper-access\public\images" />
       <recent name="\\wsl.localhost\Ubuntu\home\mark91\proper-access\public\Vista Logos (2)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\mark91\proper-access\public\images" />
       <recent name="\\wsl.localhost\Ubuntu\home\mark91\proper-access\public\Vista Logos (2)" />
       <recent name="\\wsl.localhost\Ubuntu\home\mark91\proper-access\public" />
     </key>
@@ -124,7 +142,9 @@
       <updated>1768196406065</updated>
       <workItem from="1768196407221" duration="4410000" />
       <workItem from="1768207709116" duration="44000" />
-      <workItem from="1768253641506" duration="4461000" />
+      <workItem from="1768253641506" duration="5529000" />
+      <workItem from="1768279209803" duration="404000" />
+      <workItem from="1768796724874" duration="1469000" />
     </task>
     <task id="LOCAL-00001" summary="some requested changes implemented">
       <option name="closed" value="true" />
@@ -134,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768200732020</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Most changes in place.">
+      <option name="closed" value="true" />
+      <created>1768258474166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768258474166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +170,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some requested changes implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="some requested changes implemented" />
+    <MESSAGE value="Most changes in place." />
+    <option name="LAST_COMMIT_MESSAGE" value="Most changes in place." />
   </component>
 </project>

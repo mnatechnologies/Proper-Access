@@ -1,17 +1,17 @@
 export const siteConfig = {
   // Business Information
-  businessName: "NDIS Support Coordinator",
-  phone: "1300 000 000",
-  email: "Idraftplans@supportcoordinator.com.au",
+  businessName: "Proper Access",
+  phone: "0401 642 436",
+  email: "info@properaccess.au",
   serviceArea: "Servicing Australia Wide",
-  abnRegistration: "[12345]",
+  abnRegistration: "26 924 129 066",
 
   // Colors - Tailwind classes
   colors: {
-    primary: "bg-orange-500 hover:bg-orange-600 text-white border-orange-500",
-    primaryText: "text-orange-500",
-    secondary: "bg-blue-700 hover:bg-gray-700 text-white",
-    accent: "bg-yellow-400 text-gray-900",
+    primary: "bg-brand hover:bg-brand-dark text-white border-brand",
+    primaryText: "text-brand",
+    secondary: "bg-brand hover:bg-brand-dark text-white",
+    accent: "bg-brand text-white",
   },
 
   // Social Media
@@ -40,11 +40,6 @@ export const siteConfig = {
       description: "Structured guidance for navigating NDIS access, internal reviews, and plan reassessments.",
       icon: "activity",
       href: "/access-consulting",
-    },
-    {
-      title: "",
-      description: "Comprehensive assistance in putting your NDIS plan into action and achieving your goals.",
-      icon: "check",
     },
   ],
 

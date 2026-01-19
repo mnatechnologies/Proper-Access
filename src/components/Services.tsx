@@ -10,9 +10,8 @@ const iconMap = {
 
 // Service images mapping
 const serviceImages = [
-  "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop"
+  "/images/PA2.jpg",
+  "/images/PA4.webp"
 ];
 
 export function Services() {
@@ -26,7 +25,7 @@ export function Services() {
           Comprehensive NDIS support tailored to your unique needs
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {siteConfig.services.map((service, index) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             const content = (
@@ -41,8 +40,8 @@ export function Services() {
                   />
                   {/* Icon Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end justify-center pb-4">
-                    <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
-                      <Icon className="text-white group-hover:text-orange-500 transition-colors" size={32} />
+                    <div className="w-16 h-16 bg-brand rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                      <Icon className="text-white group-hover:text-brand transition-colors" size={32} />
                     </div>
                   </div>
                 </div>
@@ -55,7 +54,7 @@ export function Services() {
                 </p>
                 {service.href && (
                   <div className="mt-6 text-center">
-                    <span className="text-orange-500 font-semibold group-hover:text-gray-900 transition-colors">
+                    <span className="text-brand font-semibold group-hover:text-gray-900 transition-colors">
                       Learn More →
                     </span>
                   </div>

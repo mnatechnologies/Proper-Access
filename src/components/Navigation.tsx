@@ -43,13 +43,15 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Image
-            src="/Vista Logos (2)/colored-logo.png"
-            alt={siteConfig.businessName}
-            width={150}
-            height={150}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/Vista Logos (2)/colored-logo.png"
+              alt={siteConfig.businessName}
+              width={150}
+              height={150}
+              priority
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
@@ -58,13 +60,13 @@ export function Navigation() {
                 return (
                   <li key={link.label}>
                     <Menu as="div" className="relative">
-                      <MenuButton className="font-medium text-gray-700 hover:text-orange-500 transition-colors relative flex items-center gap-1 group">
+                      <MenuButton className="font-medium text-gray-700 hover:text-brand transition-colors relative flex items-center gap-1 group">
                         {link.label}
                         <ChevronDown
                           size={16}
                           className="transition-transform group-data-[open]:rotate-180"
                         />
-                        <span className="absolute bottom-[-5px] left-0 w-0 h-0.5 bg-orange-500 transition-all group-hover:w-full" />
+                        <span className="absolute bottom-[-5px] left-0 w-0 h-0.5 bg-brand transition-all group-hover:w-full" />
                       </MenuButton>
 
                       <MenuItems className="absolute left-0 mt-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
@@ -75,7 +77,7 @@ export function Navigation() {
                                 <Link
                                   href={item.href}
                                   className={`block px-4 py-2 text-sm transition-colors ${
-                                    focus ? 'bg-orange-50 text-orange-500' : 'text-gray-700'
+                                    focus ? 'bg-orange-50 text-brand' : 'text-gray-700'
                                   }`}
                                 >
                                   {item.label}
@@ -94,7 +96,7 @@ export function Navigation() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-medium text-gray-700 hover:text-orange-500 transition-colors relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-orange-500 after:transition-all hover:after:w-full"
+                    className="font-medium text-gray-700 hover:text-brand transition-colors relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-brand after:transition-all hover:after:w-full"
                   >
                     {link.label}
                   </Link>
@@ -106,7 +108,7 @@ export function Navigation() {
           {/* CTA Button */}
           <a
             href="#contact"
-            className="hidden md:block bg-orange-500 text-white px-6 py-2.5 rounded-md font-semibold hover:bg-orange-600 transition-colors"
+            className="hidden md:block bg-brand text-white px-6 py-2.5 rounded-md font-semibold hover:bg-brand-dark transition-colors"
           >
             Request a Call Back
           </a>
@@ -131,7 +133,7 @@ export function Navigation() {
                     <li key={link.label}>
                       <button
                         onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                        className="w-full flex justify-between items-center font-medium text-gray-700 hover:text-orange-500 transition-colors"
+                        className="w-full flex justify-between items-center font-medium text-gray-700 hover:text-brand transition-colors"
                         aria-label="Toggle services menu"
                       >
                         {link.label}
@@ -154,7 +156,7 @@ export function Navigation() {
                             <li key={item.href}>
                               <Link
                                 href={item.href}
-                                className="block font-medium text-gray-600 hover:text-orange-500 transition-colors py-1"
+                                className="block font-medium text-gray-600 hover:text-brand transition-colors py-1"
                                 onClick={() => {
                                   setMobileMenuOpen(false);
                                   setMobileServicesOpen(false);
@@ -174,7 +176,7 @@ export function Navigation() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="block font-medium text-gray-700 hover:text-orange-500 transition-colors"
+                      className="block font-medium text-gray-700 hover:text-brand transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.label}
@@ -185,7 +187,7 @@ export function Navigation() {
               <li>
                 <a
                   href="#contact"
-                  className="block bg-orange-500 text-white px-6 py-2.5 rounded-md font-semibold text-center hover:bg-orange-600 transition-colors"
+                  className="block bg-brand text-white px-6 py-2.5 rounded-md font-semibold text-center hover:bg-brand-dark transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Request a Call Back

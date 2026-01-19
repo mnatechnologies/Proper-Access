@@ -30,7 +30,7 @@ export default function FeeSchedule() {
       <section className="py-8 bg-orange-50 border-b border-orange-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto flex items-start gap-4">
-            <DollarSign className="text-orange-500 flex-shrink-0 mt-1" size={24} />
+            <DollarSign className="text-brand flex-shrink-0 mt-1" size={24} />
             <div>
               <h3 className="font-bold text-gray-900 mb-2">NDIS Pricing</h3>
               <p className="text-gray-600">
@@ -60,31 +60,31 @@ export default function FeeSchedule() {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Standard Hours</h4>
                     <p className="text-gray-600 text-sm mb-1">Monday to Friday, 8am - 6pm</p>
-                    <p className="text-2xl font-bold text-orange-500">As per NDIS Price Guide</p>
+                    <p className="text-2xl font-bold text-brand">As per NDIS Price Guide</p>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">Non-Standard Hours</h4>
                     <p className="text-gray-600 text-sm mb-1">Evenings, weekends, public holidays</p>
-                    <p className="text-2xl font-bold text-orange-500">NDIS hourly rate + loading</p>
+                    <p className="text-2xl font-bold text-brand">NDIS hourly rate + loading</p>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Plan interpretation and explanation</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Provider search and connection</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Service coordination and monitoring</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Regular progress reviews</p>
                 </div>
               </div>
@@ -101,26 +101,26 @@ export default function FeeSchedule() {
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
                 <div className="text-center">
                   <h4 className="font-bold text-gray-900 mb-2">Hourly Rate</h4>
-                  <p className="text-2xl font-bold text-orange-500 mb-2">As per NDIS Price Guide</p>
+                  <p className="text-2xl font-bold text-brand mb-2">As per NDIS Price Guide</p>
                   <p className="text-gray-600 text-sm">For Coordination of Supports services</p>
                 </div>
               </div>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Access application assistance</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Evidence gathering and coordination</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">Review and appeal support</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-600">NDIA communication support</p>
                 </div>
               </div>
@@ -132,17 +132,17 @@ export default function FeeSchedule() {
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
-                  <FileText className="text-orange-500 mx-auto mb-4" size={32} />
+                  <FileText className="text-brand mx-auto mb-4" size={32} />
                   <h4 className="font-bold text-gray-900 mb-2">Invoicing</h4>
                   <p className="text-gray-600 text-sm">Itemized invoices provided for all services</p>
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
-                  <Clock className="text-orange-500 mx-auto mb-4" size={32} />
+                  <Clock className="text-brand mx-auto mb-4" size={32} />
                   <h4 className="font-bold text-gray-900 mb-2">Service Time</h4>
                   <p className="text-gray-600 text-sm">Billed in 15-minute increments as per NDIS rules</p>
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
-                  <DollarSign className="text-orange-500 mx-auto mb-4" size={32} />
+                  <DollarSign className="text-brand mx-auto mb-4" size={32} />
                   <h4 className="font-bold text-gray-900 mb-2">Direct Billing</h4>
                   <p className="text-gray-600 text-sm">We claim directly from NDIS or your plan manager</p>
                 </div>
@@ -152,23 +152,23 @@ export default function FeeSchedule() {
                 <h4 className="font-bold text-gray-900 mb-4">What&apos;s Included</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-3">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-brand font-bold">•</span>
                     <span>Face-to-face meetings, phone calls, and video consultations</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-brand font-bold">•</span>
                     <span>Email communication and coordination activities</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-brand font-bold">•</span>
                     <span>Travel time to in-person meetings (if applicable)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-brand font-bold">•</span>
                     <span>Administrative work related to your supports</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-brand font-bold">•</span>
                     <span>Report writing and documentation</span>
                   </li>
                 </ul>
@@ -243,7 +243,7 @@ export default function FeeSchedule() {
                   href="https://www.ndis.gov.au/providers/pricing-arrangements"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange-500 hover:text-orange-600 underline"
+                  className="text-brand hover:text-brand-dark underline"
                 >
                   ndis.gov.au/providers/pricing-arrangements
                 </a>
