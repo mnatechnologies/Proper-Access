@@ -7,30 +7,51 @@ import Image from "next/image";
 
 export function CallbackForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
+    setError("");
+
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
     // Lead qualification scoring (for internal use)
     const leadScore = calculateLeadScore(data);
 
-    console.log("Form submitted:", {
-      ...data,
-      leadQuality: leadScore.quality,
-      leadScore: leadScore.score,
-      qualificationNotes: leadScore.notes,
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...data,
+          leadQuality: leadScore.quality,
+          leadScore: leadScore.score,
+        }),
+      });
 
-    // Here you would send this data to your API/CRM
-    setSubmitted(true);
+      const result = await response.json();
 
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      (e.target as HTMLFormElement).reset();
-    }, 3000);
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message");
+      }
+
+      setSubmitted(true);
+
+      // Reset after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+        (e.target as HTMLFormElement).reset();
+      }, 3000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   // Lead scoring logic (adjust weights based on your priorities)
@@ -332,11 +353,18 @@ export function CallbackForm() {
                   </select>
                 </div>
 
+                {error && (
+                  <div className="p-4 bg-red-100 border border-red-300 rounded-md text-red-700 text-sm">
+                    {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-brand text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg"
+                  disabled={isLoading}
+                  className="w-full bg-brand text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-dark transition-all hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
-                  Request Call Back
+                  {isLoading ? "Sending..." : "Request Call Back"}
                 </button>
               </form>
             )}
