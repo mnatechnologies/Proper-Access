@@ -56,17 +56,10 @@ export default function FeeSchedule() {
               </p>
 
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-2">Standard Hours</h4>
-                    <p className="text-gray-600 text-sm mb-1">Monday to Friday, 8am - 6pm</p>
-                    <p className="text-2xl font-bold text-brand">As per NDIS Price Guide</p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-2">Non-Standard Hours</h4>
-                    <p className="text-gray-600 text-sm mb-1">Evenings, weekends, public holidays</p>
-                    <p className="text-2xl font-bold text-brand">NDIS hourly rate + loading</p>
-                  </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">Standard Hours</h4>
+                  <p className="text-gray-600 text-sm mb-1">Monday to Friday, 8am - 6pm</p>
+                  <p className="text-2xl font-bold text-brand">As per NDIS Price Guide</p>
                 </div>
               </div>
 
@@ -94,35 +87,138 @@ export default function FeeSchedule() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Access Consulting</h2>
               <p className="text-gray-600 mb-6">
-                Access support for NDIS applications, reviews, and appeals. Fees are charged in
-                accordance with NDIS pricing for Support Coordination - Level 2 (Coordination of Supports).
+                Access support for NDIS applications, reviews, and appeals. This service is not funded
+                through an NDIS plan and is provided separately from Support Coordination.
               </p>
 
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                <div className="text-center">
-                  <h4 className="font-bold text-gray-900 mb-2">Hourly Rate</h4>
-                  <p className="text-2xl font-bold text-brand mb-2">As per NDIS Price Guide</p>
-                  <p className="text-gray-600 text-sm">For Coordination of Supports services</p>
-                </div>
+                <h4 className="font-bold text-gray-900 mb-4">Fee options may include:</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Hourly consultancy rate</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Fixed-fee packages for access or review preparation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Short consultations for guidance and clarification</span>
+                  </li>
+                </ul>
+                <p className="text-gray-600 text-sm mt-4">
+                  All fees are discussed and agreed prior to commencement. Invoices are issued privately
+                  and are not claimable through NDIS plans.
+                </p>
               </div>
 
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
-                  <p className="text-gray-600">Access application assistance</p>
+              <div className="mb-6">
+                <h4 className="font-bold text-gray-900 mb-4">What this service includes</h4>
+                <p className="text-gray-600 mb-4">
+                  Depending on individual circumstances, this service may include:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Guidance on NDIS access criteria and eligibility pathways</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Support understanding evidence requirements</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Assistance organising and coordinating supporting documentation</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Reviewing draft access or review requests for clarity and alignment</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Guidance on NDIA processes, timeframes, and next steps</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Support understanding NDIA correspondence</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
-                  <p className="text-gray-600">Evidence gathering and coordination</p>
+                <p className="text-gray-600 text-sm mt-4 italic">
+                  This service focuses on preparation, clarity, and system navigation. Final decisions remain with the NDIA.
+                </p>
+              </div>
+            </div>
+
+            {/* NDIS Provider Setup & Compliance Consulting */}
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">NDIS Provider Setup &amp; Compliance Consulting</h2>
+              <p className="text-gray-600 mb-6">
+                Independent guidance for individuals and sole traders seeking clarity on NDIS provider setup,
+                compliance obligations, and registration pathways.
+              </p>
+
+              <div className="bg-gray-50 rounded-lg p-6 mb-6">
+                <h4 className="font-bold text-gray-900 mb-4">Fee options may include:</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Hourly consultancy rate</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Fixed-fee packages for setup and compliance guidance</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <span>Short consultations for guidance and clarification</span>
+                  </li>
+                </ul>
+                <p className="text-gray-600 text-sm mt-4">
+                  All fees are discussed and agreed prior to commencement. Invoices are issued privately
+                  and are not claimable through NDIS plans.
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="font-bold text-gray-900 mb-4">What this service includes</h4>
+                <p className="text-gray-600 mb-4">
+                  Depending on the client&apos;s goals and intended supports, this may include:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Guidance on NDIS provider models and pathways</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Clarifying registered vs unregistered provider options</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Explanation of NDIS registration requirements</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Support identifying required policies, procedures, and insurances</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Guidance on worker screening and state-based requirements</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Preparation support for NDIS Commission applications</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-brand font-bold">•</span>
+                    <p className="text-gray-600">Readiness guidance for verification or certification audits</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
-                  <p className="text-gray-600">Review and appeal support</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-brand flex-shrink-0 mt-1" size={20} />
-                  <p className="text-gray-600">NDIA communication support</p>
-                </div>
+                <p className="text-gray-600 text-sm mt-4 italic">
+                  This service focuses on education, preparation, and risk awareness. Final decisions regarding
+                  registration and compliance are made by the NDIS Quality and Safeguards Commission and other relevant authorities.
+                </p>
               </div>
             </div>
 
@@ -138,13 +234,24 @@ export default function FeeSchedule() {
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
                   <Clock className="text-brand mx-auto mb-4" size={32} />
-                  <h4 className="font-bold text-gray-900 mb-2">Service Time</h4>
-                  <p className="text-gray-600 text-sm">Billed in 15-minute increments as per NDIS rules</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Service Time (Support Coordination)</h4>
+                  <p className="text-gray-600 text-sm">Support Coordination is billed in 15-minute increments as per NDIS rules</p>
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
                   <DollarSign className="text-brand mx-auto mb-4" size={32} />
-                  <h4 className="font-bold text-gray-900 mb-2">Direct Billing</h4>
-                  <p className="text-gray-600 text-sm">We claim directly from NDIS or your plan manager</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Direct Billing (Support Coordination)</h4>
+                  <p className="text-gray-600 text-sm">For Support Coordination, we claim directly from NDIS or your plan manager</p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 text-center">
+                  <h4 className="font-bold text-gray-900 mb-2">Access &amp; Review Consulting</h4>
+                  <p className="text-gray-600 text-sm">Access &amp; Review Consulting is provided on a private fee basis.</p>
+                </div>
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 text-center">
+                  <h4 className="font-bold text-gray-900 mb-2">NDIS Provider Setup &amp; Compliance Consulting</h4>
+                  <p className="text-gray-600 text-sm">NDIS Provider Setup &amp; Compliance Consulting is provided on a private fee basis.</p>
                 </div>
               </div>
 
@@ -194,13 +301,9 @@ export default function FeeSchedule() {
             {/* Payment Methods */}
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Payment Options</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-lg p-6">
-                  <h4 className="font-bold text-gray-900 mb-3">NDIS-Managed Plans</h4>
-                  <p className="text-gray-600">
-                    We bill the NDIS directly through the NDIS portal. No payment required from you.
-                  </p>
-                </div>
+              
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Support Coordination</h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3">Plan-Managed</h4>
                   <p className="text-gray-600">
@@ -219,6 +322,22 @@ export default function FeeSchedule() {
                     For services outside NDIS funding, we accept bank transfer and credit card payments.
                   </p>
                 </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Access &amp; Review Consulting</h3>
+              <div className="bg-gray-50 rounded-lg p-6 mb-8">
+                <p className="text-gray-600">
+                  Access &amp; Review Consulting is provided on a private fee basis. Payment is made directly
+                  via bank transfer or credit card. This service is not claimable through NDIS plans.
+                </p>
+              </div>
+
+              <h3 className="text-xl font-bold text-gray-900 mb-4">NDIS Provider Setup &amp; Compliance Consulting</h3>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <p className="text-gray-600">
+                  NDIS Provider Setup &amp; Compliance Consulting is provided on a private fee basis. Payment is made
+                  directly via bank transfer or credit card. This service is not claimable through NDIS plans.
+                </p>
               </div>
             </div>
 

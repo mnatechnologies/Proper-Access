@@ -41,6 +41,12 @@ export const siteConfig = {
       icon: "activity",
       href: "/access-consulting",
     },
+    {
+      title: "NDIS Provider Setup & Compliance Consulting",
+      description: "Independent guidance for individuals and sole traders seeking clarity on NDIS provider setup, compliance obligations, and registration pathways.",
+      icon: "check",
+      href: "/provider-consulting",
+    },
   ],
 
   // FAQs

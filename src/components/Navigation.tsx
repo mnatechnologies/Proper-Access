@@ -29,7 +29,8 @@ export function Navigation() {
       type: "dropdown",
       items: [
         { href: "/support-coordination", label: "Support Coordination" },
-        { href: "/access-consulting", label: "Access Consulting" }
+        { href: "/access-consulting", label: "Access Consulting" },
+        { href: "/provider-consulting", label: "NDIS Provider Setup & Compliance Consulting" }
       ]
     },
     { href: "/#eligibility", label: "Eligibility", type: "link" },

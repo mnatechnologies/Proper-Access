@@ -286,6 +286,8 @@ export function CallbackForm() {
                       <option value="">Please select</option>
                       <option value="support-coordination">Support Coordination</option>
                       <option value="specialist-coordination">Specialist Support Coordination</option>
+                      <option value="access-consulting">Access/Review Consulting</option>
+                      <option value="provider-consulting">NDIS Provider Setup &amp; Compliance Consulting</option>
                       <option value="plan-management">Plan Management</option>
                       <option value="not-sure">I&#39;m not sure yet - need guidance</option>
                     </select>

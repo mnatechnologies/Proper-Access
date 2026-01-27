@@ -11,7 +11,8 @@ const iconMap = {
 // Service images mapping
 const serviceImages = [
   "/images/PA2.jpg",
-  "/images/PA4.webp"
+  "/images/PA4.webp",
+  "/images/PA3.webp"
 ];
 
 export function Services() {
@@ -25,7 +26,7 @@ export function Services() {
           Comprehensive NDIS support tailored to your unique needs
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {siteConfig.services.map((service, index) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             const content = (
