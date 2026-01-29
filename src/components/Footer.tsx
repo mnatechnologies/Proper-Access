@@ -33,8 +33,8 @@ export function Footer() {
               {[
                 {href: "/support-coordination", label: "Support Coordination"},
                 {href: "/access-consulting", label: "Access Consulting"},
+                {href: "/provider-consulting", label: "NDIS Provider Setup & Compliance Consulting"},
                 {href: "/fee-schedule", label: "Fee Schedule"},
-                {href: "#contact", label: "Contact"},
               ].map((link) => (
                 <li key={link.href}>
                   <a

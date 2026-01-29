@@ -9,7 +9,7 @@ export function TopBar() {
       <div className="animate-marquee whitespace-nowrap flex items-center">
         {/* Duplicate content twice for seamless loop */}
         {[...Array(2)].map((_, i) => (
-          <div key={i} className="flex items-center justify-evenly min-w-[75vw] text-sm">
+          <div key={i} className="flex flex-shrink-0 items-center justify-around min-w-full gap-6 px-4 text-sm">
             <a
               href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
               className="flex items-center gap-2 hover:text-brand transition-colors"

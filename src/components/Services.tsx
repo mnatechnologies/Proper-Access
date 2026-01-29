@@ -56,7 +56,7 @@ export function Services() {
                 {service.href && (
                   <div className="mt-6 text-center">
                     <span className="text-brand font-semibold group-hover:text-gray-900 transition-colors">
-                      Learn More →
+                      Learn about {service.title} →
                     </span>
                   </div>
                 )}

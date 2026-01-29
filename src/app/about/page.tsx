@@ -35,16 +35,22 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                Proper Access was founded in response to a growing gap between what the NDIS is intended to provide and what many participants and families actually experience. Over time, it became clear that a significant number of participants feel lost within the system — uncertain about what their plan is meant to achieve, unclear about their rights and options, and overwhelmed by complex processes and inconsistent information. Many have shared experiences of poor communication, misaligned services, and a lack of transparency that leaves them vulnerable to decisions they do not fully understand.
+                Proper Access was established in response to a growing disconnect between the intent of the NDIS and the real-world experiences of participants, families, and providers navigating the system. Over time, it became clear that many people engaging with the NDIS — whether seeking access, managing plans, coordinating supports, or attempting to operate within the provider space — are left without clear, consistent guidance.
               </p>
               <p>
-                Proper Access exists to restore clarity, integrity, and informed choice within this environment. The practice was established to provide independent support coordination and access and review consulting that prioritises understanding over volume, preparation over urgency, and ethical practice over transactional outcomes. The focus is on helping participants and families make sense of their plans, navigate NDIS processes with confidence, and engage with supports in a way that genuinely aligns with their goals.
+                Participants and families frequently report feeling overwhelmed by complex processes, unclear eligibility pathways, inconsistent information, and services that prioritise volume over understanding. Similarly, individuals entering the NDIS as providers often encounter regulatory complexity without structured, practical guidance on how to operate ethically, compliantly, and sustainably.
               </p>
               <p>
-                Proper Access operates on the principle that effective support is not about directing decisions or making promises — it is about equipping people with the knowledge, structure, and guidance they need to make informed choices for themselves. All services are delivered independently, transparently, and in line with NDIS legislation and guidelines.
+                Proper Access exists to restore clarity, integrity, and informed decision-making across these areas.
+              </p>
+              <p>
+                The practice provides independent support coordination, access and review consulting, and NDIS systems and provider consultancy, with a focus on preparation, transparency, and ethical practice. Services are designed to help participants, families, and emerging providers understand their position within the NDIS, navigate processes with confidence, and engage with the system in a way that aligns with their goals, responsibilities, and rights.
+              </p>
+              <p>
+                Proper Access operates on the principle that effective support is not about directing decisions or guaranteeing outcomes — it is about equipping people with the knowledge, structure, and guidance needed to make informed choices for themselves. All services are delivered independently and in line with relevant NDIS legislation, rules, and guidelines.
               </p>
               <p className="font-semibold text-gray-900">
-                Proper Access is not affiliated with the NDIA and does not influence funding or access decisions.
+                Proper Access is not affiliated with the NDIA and does not influence access, funding, or planning decisions.
               </p>
             </div>
           </div>
@@ -81,16 +87,19 @@ export default function About() {
               {/* Bio text */}
               <div className="md:col-span-2 space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Mark brings over 10 years of experience in community services, including close to six years working within the NDIS across a range of system-level and participant-facing roles. This includes experience as a Local Area Coordinator (LAC), Planner, Case Manager supporting plan reviews, and Support Coordinator. Having worked across these positions, the founder has developed a deep, practical understanding of how the NDIS operates — from access and planning through to implementation and review.
+                  Mark brings over a decade of experience across community services, including close to six years working within the NDIS in both system-level and participant-facing roles. His experience spans Local Area Coordination, planning and review environments, case management, support coordination, and system navigation roles supporting participants, families, and providers at various stages of the NDIS journey.
                 </p>
                 <p>
-                  The practice is underpinned by tertiary qualifications in Social Science, with a major in Psychology, and applies a person-centred, trauma-informed approach to all services. This ensures support is delivered with respect, clarity, and an understanding of the broader social and psychological factors that affect participants and families.
+                  Having worked across access, planning, implementation, review, and coordination functions, Mark has developed a comprehensive and practical understanding of how the NDIS operates — including eligibility pathways, evidence requirements, plan structures, funding decision-making, and provider engagement. This perspective informs all consultancy services delivered through Proper Access, whether supporting participants to navigate funded supports, assisting individuals through access or review processes, or guiding emerging providers to understand their obligations and operating environment.
                 </p>
                 <p>
-                  Proper Access was established to bring together this experience into a single, independent practice that supports participants to better understand their plans, engage confidently with providers, and navigate access and review processes without unnecessary complexity.
+                  The practice is underpinned by tertiary qualifications in Social Science, majoring in Psychology, and applies a person-centred, trauma-informed approach across all services. This ensures work is undertaken with sensitivity to lived experience, systemic barriers, and the broader social and psychological factors that impact engagement with the NDIS.
+                </p>
+                <p>
+                  Proper Access was established to bring together this experience into a single, independent consultancy — offering structured guidance, practical insight, and ethical support to those navigating the NDIS, without unnecessary complexity or transactional focus.
                 </p>
                 <p className="font-semibold text-gray-900">
-                  Culturally responsive support is available, with services offered in Arabic, Assyrian, and Chaldean, as well as English.
+                  Culturally responsive services are available, with support offered in Arabic, Assyrian, and Chaldean, as well as English.
                 </p>
               </div>
             </div>

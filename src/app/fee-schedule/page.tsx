@@ -32,11 +32,9 @@ export default function FeeSchedule() {
           <div className="max-w-4xl mx-auto flex items-start gap-4">
             <DollarSign className="text-brand flex-shrink-0 mt-1" size={24} />
             <div>
-              <h3 className="font-bold text-gray-900 mb-2">NDIS Pricing</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Pricing Information</h3>
               <p className="text-gray-600">
-                Our fees are set in accordance with the current NDIS Price Guide and Pricing
-                Arrangements. All prices include GST where applicable. Prices are subject to
-                change when NDIS pricing updates occur.
+                Fees for NDIS-funded supports are charged in accordance with the current NDIS Price Guide and Pricing Arrangements. Private consultancy services are billed separately at agreed private rates and are not funded through NDIS plans.
               </p>
             </div>
           </div>
@@ -48,20 +46,20 @@ export default function FeeSchedule() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
 
+            {/* Standard Hours */}
+            <div className="bg-gray-50 rounded-lg p-6 mb-12">
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">Standard Hours</h4>
+                <p className="text-gray-600 text-sm mb-1">Monday to Friday, 8:00am – 6:00pm. NDIS-funded services are delivered in line with the NDIS Price Guide. Private consultancy services may be arranged outside standard hours by agreement.</p>
+              </div>
+            </div>
+
             {/* Support Coordination */}
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Support Coordination</h2>
               <p className="text-gray-600 mb-6">
                 Support Coordination is charged at NDIS-approved rates as per the current Price Guide.
               </p>
-
-              <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-2">Standard Hours</h4>
-                  <p className="text-gray-600 text-sm mb-1">Monday to Friday, 8am - 6pm</p>
-                  <p className="text-2xl font-bold text-brand">As per NDIS Price Guide</p>
-                </div>
-              </div>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
@@ -245,11 +243,13 @@ export default function FeeSchedule() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 text-center">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
+                  <FileText className="text-brand mx-auto mb-4" size={32} />
                   <h4 className="font-bold text-gray-900 mb-2">Access &amp; Review Consulting</h4>
                   <p className="text-gray-600 text-sm">Access &amp; Review Consulting is provided on a private fee basis.</p>
                 </div>
-                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 text-center">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
+                  <CheckCircle className="text-brand mx-auto mb-4" size={32} />
                   <h4 className="font-bold text-gray-900 mb-2">NDIS Provider Setup &amp; Compliance Consulting</h4>
                   <p className="text-gray-600 text-sm">NDIS Provider Setup &amp; Compliance Consulting is provided on a private fee basis.</p>
                 </div>
@@ -303,7 +303,7 @@ export default function FeeSchedule() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Payment Options</h2>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">Support Coordination</h3>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3">Plan-Managed</h4>
                   <p className="text-gray-600">
@@ -316,28 +316,50 @@ export default function FeeSchedule() {
                     We provide itemized invoices for you to claim reimbursement from the NDIS myplace portal.
                   </p>
                 </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Access &amp; Review Consulting</h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h4 className="font-bold text-gray-900 mb-3">Private Payment</h4>
+                  <h4 className="font-bold text-gray-900 mb-3">Private Fee Basis</h4>
                   <p className="text-gray-600">
-                    For services outside NDIS funding, we accept bank transfer and credit card payments.
+                    Access &amp; Review Consulting is provided on a private fee basis.
+                  </p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Direct Payment</h4>
+                  <p className="text-gray-600">
+                    Invoice paid directly via bank transfer or credit card.
+                  </p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Not NDIS Claimable</h4>
+                  <p className="text-gray-600">
+                    This service is not claimable through NDIS Plans.
                   </p>
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Access &amp; Review Consulting</h3>
-              <div className="bg-gray-50 rounded-lg p-6 mb-8">
-                <p className="text-gray-600">
-                  Access &amp; Review Consulting is provided on a private fee basis. Payment is made directly
-                  via bank transfer or credit card. This service is not claimable through NDIS plans.
-                </p>
-              </div>
-
               <h3 className="text-xl font-bold text-gray-900 mb-4">NDIS Provider Setup &amp; Compliance Consulting</h3>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <p className="text-gray-600">
-                  NDIS Provider Setup &amp; Compliance Consulting is provided on a private fee basis. Payment is made
-                  directly via bank transfer or credit card. This service is not claimable through NDIS plans.
-                </p>
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Private Fee Basis</h4>
+                  <p className="text-gray-600">
+                    NDIS Provider Setup &amp; Compliance Consulting is provided on a private fee basis.
+                  </p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Direct Payment</h4>
+                  <p className="text-gray-600">
+                    Invoice paid directly via bank transfer or credit card.
+                  </p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Not NDIS Claimable</h4>
+                  <p className="text-gray-600">
+                    This service is not claimable through NDIS Plans.
+                  </p>
+                </div>
               </div>
             </div>
 

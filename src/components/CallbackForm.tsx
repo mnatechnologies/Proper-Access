@@ -270,6 +270,7 @@ export function CallbackForm() {
                       <option value="approved-no-plan">I&#39;m approved but need help creating my plan</option>
                       <option value="applying">I&#39;m currently applying for NDIS</option>
                       <option value="not-yet">Not yet, I&#39;m exploring my options</option>
+                      <option value="not-applicable">Not Applicable</option>
                     </select>
                   </div>
 
@@ -288,7 +289,6 @@ export function CallbackForm() {
                       <option value="specialist-coordination">Specialist Support Coordination</option>
                       <option value="access-consulting">Access/Review Consulting</option>
                       <option value="provider-consulting">NDIS Provider Setup &amp; Compliance Consulting</option>
-                      <option value="plan-management">Plan Management</option>
                       <option value="not-sure">I&#39;m not sure yet - need guidance</option>
                     </select>
                   </div>
@@ -306,6 +306,7 @@ export function CallbackForm() {
                       <option value="no">No, this is my first time</option>
                       <option value="yes-switching">Yes, I&#39;m looking to switch coordinators</option>
                       <option value="yes-additional">Yes, but I need additional support</option>
+                      <option value="not-applicable">Not Applicable</option>
                     </select>
                   </div>
 
@@ -349,7 +350,7 @@ export function CallbackForm() {
                     className="w-full px-4 py-3 border-2 border-gray-200 bg-white rounded-md focus:border-brand focus:outline-none text-gray-900 transition-colors"
                   >
                     <option value="">Select a time</option>
-                    <option value="morning">Morning (9am - 12pm)</option>
+                    <option value="morning">Morning (8am - 12pm)</option>
                     <option value="afternoon">Afternoon (12pm - 5pm)</option>
                     <option value="evening">Evening (5pm - 7pm)</option>
                   </select>
