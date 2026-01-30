@@ -106,13 +106,21 @@ export function Navigation() {
             })}
           </ul>
 
-          {/* CTA Button */}
-          <a
-            href="#contact"
-            className="hidden md:block bg-brand text-white px-6 py-2.5 rounded-md font-semibold hover:bg-brand-dark transition-colors"
-          >
-            Request a Call Back
-          </a>
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-4">
+            <Link
+              href="/fee-schedule"
+              className="bg-gray-100 text-gray-900 px-6 py-2.5 rounded-md font-semibold hover:bg-gray-200 transition-colors"
+            >
+              Fee Schedule
+            </Link>
+            <a
+              href="#contact"
+              className="bg-brand text-white px-6 py-2.5 rounded-md font-semibold hover:bg-brand-dark transition-colors"
+            >
+              Request a Call Back
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -185,6 +193,15 @@ export function Navigation() {
                   </li>
                 );
               })}
+              <li>
+                <Link
+                  href="/fee-schedule"
+                  className="block bg-gray-100 text-gray-900 px-6 py-2.5 rounded-md font-semibold text-center hover:bg-gray-200 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Fee Schedule
+                </Link>
+              </li>
               <li>
                 <a
                   href="#contact"

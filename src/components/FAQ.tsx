@@ -6,6 +6,10 @@ import { siteConfig } from "@/config/site";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
+
+  // Show first 4 FAQs initially
+  const displayedFaqs = showAll ? siteConfig.faqs : siteConfig.faqs.slice(0, 4);
 
   return (
     <section id="faq" className="py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
@@ -14,11 +18,11 @@ export function FAQ() {
           Frequently Asked Questions
         </h2>
         <p className="text-center text-white mb-12 max-w-2xl mx-auto">
-          Get answers to common questions about NDIS Support Coordination
+          Get answers to common questions about our services
         </p>
 
-        <div className="max-w-4xl mx-auto space-y-4">
-          {siteConfig.faqs.map((faq, index) => (
+        <div className="max-w-4xl mx-auto space-y-4 mb-8">
+          {displayedFaqs.map((faq, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
@@ -48,6 +52,28 @@ export function FAQ() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          {!showAll && (
+            <button
+              onClick={() => setShowAll(true)}
+              className="bg-brand text-white px-8 py-3 rounded-md font-semibold hover:bg-brand-dark transition-all hover:scale-105 shadow-lg mb-8"
+            >
+              View All FAQs
+            </button>
+          )}
+
+          {showAll && (
+            <div className="animate-fadeInUp">
+              <p className="text-gray-300 text-lg">
+                Question not answered?{" "}
+                <a href="#contact" className="text-brand hover:text-white transition-colors underline">
+                  Reach out to us
+                </a>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
