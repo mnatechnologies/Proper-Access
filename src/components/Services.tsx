@@ -17,12 +17,12 @@ const serviceImages = [
 
 export function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-12 sm:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">
           Our Services
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto">
           Comprehensive NDIS support tailored to your unique needs
         </p>
 
@@ -32,7 +32,7 @@ export function Services() {
             const content = (
               <>
                 {/* Service Image */}
-                <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+                <div className="relative w-full h-40 sm:h-48 mb-4 sm:mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={serviceImages[index] || serviceImages[0]}
                     alt={service.title}
@@ -47,10 +47,10 @@ export function Services() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 text-center">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-center leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
                   {service.description}
                 </p>
                 {service.href && (
@@ -67,14 +67,14 @@ export function Services() {
               <a
                 key={index}
                 href={service.href}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group block"
+                className="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group block"
               >
                 {content}
               </a>
             ) : (
               <div
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
+                className="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 group"
               >
                 {content}
               </div>

@@ -12,12 +12,12 @@ export function FAQ() {
   const displayedFaqs = showAll ? siteConfig.faqs : siteConfig.faqs.slice(0, 4);
 
   return (
-    <section id="faq" className="py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
+    <section id="faq" className="py-12 sm:py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-center text-white mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-white mb-8 sm:mb-12 max-w-2xl mx-auto">
           Get answers to common questions about our services
         </p>
 
@@ -29,9 +29,9 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 text-left flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors"
               >
-                <span className="font-semibold text-gray-900 text-lg">
+                <span className="font-semibold text-gray-900 text-base sm:text-lg">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -46,7 +46,7 @@ export function FAQ() {
                   openIndex === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <p className="px-6 pb-5 text-gray-600 leading-relaxed">
+                <p className="px-4 sm:px-6 pb-4 sm:pb-5 text-sm sm:text-base text-gray-600 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

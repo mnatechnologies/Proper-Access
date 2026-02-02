@@ -13,13 +13,13 @@ export default function About() {
       <Navigation />
 
       {/* Hero Section with Mission Statement */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-20 md:py-32">
+      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-12 sm:py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp">
               About Us
             </h1>
-            <p className="text-lg md:text-xl mb-10 opacity-90 animate-fadeInUp animation-delay-200 italic">
+            <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 opacity-90 animate-fadeInUp animation-delay-200 italic">
               &ldquo;Proper Access exists to bring clarity, integrity, and informed choice to people navigating the NDIS through independent support and genuine system knowledge.&rdquo;
             </p>
           </div>
@@ -27,13 +27,13 @@ export default function About() {
       </section>
 
       {/* About Proper Access Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
               About Proper Access
             </h2>
-            <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
               <p>
                 Proper Access was established in response to a growing disconnect between the intent of the NDIS and the real-world experiences of participants, families, and providers navigating the system. Over time, it became clear that many people engaging with the NDIS — whether seeking access, managing plans, coordinating supports, or attempting to operate within the provider space — are left without clear, consistent guidance.
               </p>
@@ -58,10 +58,10 @@ export default function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
               Founder and Principal Consultant
             </h2>
             <div className="grid md:grid-cols-3 gap-12 items-start">

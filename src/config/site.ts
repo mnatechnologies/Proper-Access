@@ -24,7 +24,7 @@ export const siteConfig = {
   // Hero Section
   hero: {
     title: "Proper Access",
-    subtitle: "Independent NDIS Support Coordination and Access/Review Consulting",
+    subtitle: "Independent NDIS Support Coordination, Access & Review Consulting, and Provider Advisory",
   },
 
   // Services

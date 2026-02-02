@@ -84,12 +84,12 @@ export function EligibilitySteps() {
   ];
 
   return (
-    <section id="eligibility" className="py-20 bg-gradient-to-tr from-gray-900 via-gray-700 to-gray-900">
+    <section id="eligibility" className="py-12 sm:py-20 bg-gradient-to-tr from-gray-900 via-gray-700 to-gray-900">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-3 gap-8 max-w-8xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-8xl mx-auto">
           {/* Left Column - NDIS Eligibility */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3">
               Find Out If You&#39;re Eligible for the NDIS
             </h2>
             <p className="text-brand font-medium mb-8">
@@ -126,7 +126,7 @@ export function EligibilitySteps() {
 
           {/* Middle Column - Support Coordination Suitability */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3">
               Support Coordination Suitability
             </h2>
             <p className="text-brand font-medium mb-8">
@@ -163,7 +163,7 @@ export function EligibilitySteps() {
 
           {/* Right Column - NDIS Provider Setup & Compliance Consulting */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3">
               NDIS Provider Setup &amp; Compliance Consulting
             </h2>
             <p className="text-brand font-medium mb-8">

@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="bg-white text-gray-900 py-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
             <div className="mb-4 flex items-center justify-center">
@@ -28,7 +28,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg text-center font-bold mb-4">Quick Links</h4>
+            <h4 className="text-lg text-center md:text-left font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
                 {href: "/support-coordination", label: "Support Coordination"},
@@ -50,7 +50,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg text-center font-bold mb-4">Contact Us</h4>
+            <h4 className="text-lg text-center md:text-left font-bold mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-gray-700 flex-shrink-0"/>
@@ -79,7 +79,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-lg text-center font-bold mb-4">Follow Us</h4>
+            <h4 className="text-lg text-center md:text-left font-bold mb-4">Follow Us</h4>
             <div className="flex justify-center gap-4">
               <a
                 href={siteConfig.social.facebook}

@@ -13,13 +13,13 @@ export default function FeeSchedule() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-16">
+      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Fee Schedule
             </h1>
-            <p className="text-lg opacity-90">
+            <p className="text-base sm:text-lg opacity-90">
               Transparent pricing for NDIS services
             </p>
           </div>
@@ -27,9 +27,9 @@ export default function FeeSchedule() {
       </section>
 
       {/* NDIS Price Guide Notice */}
-      <section className="py-8 bg-orange-50 border-b border-orange-100">
+      <section className="py-6 sm:py-8 bg-orange-50 border-b border-orange-100">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto flex items-start gap-4">
+          <div className="max-w-4xl mx-auto flex items-start gap-3 sm:gap-4">
             <DollarSign className="text-brand flex-shrink-0 mt-1" size={24} />
             <div>
               <h3 className="font-bold text-gray-900 mb-2">Pricing Information</h3>
@@ -42,7 +42,7 @@ export default function FeeSchedule() {
       </section>
 
       {/* Pricing Content */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
 
@@ -56,7 +56,7 @@ export default function FeeSchedule() {
 
             {/* Support Coordination */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Support Coordination</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Support Coordination</h2>
               <p className="text-gray-600 mb-6">
                 Support Coordination is charged at NDIS-approved rates as per the current Price Guide.
               </p>
@@ -83,7 +83,7 @@ export default function FeeSchedule() {
 
             {/* Access Consulting */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Access Consulting</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Access Consulting</h2>
               <p className="text-gray-600 mb-6">
                 Access support for NDIS applications, reviews, and appeals. This service is not funded
                 through an NDIS plan and is provided separately from Support Coordination.
@@ -150,7 +150,7 @@ export default function FeeSchedule() {
 
             {/* NDIS Provider Setup & Compliance Consulting */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">NDIS Provider Setup &amp; Compliance Consulting</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">NDIS Provider Setup &amp; Compliance Consulting</h2>
               <p className="text-gray-600 mb-6">
                 Independent guidance for individuals and sole traders seeking clarity on NDIS provider setup,
                 compliance obligations, and registration pathways.
@@ -222,7 +222,7 @@ export default function FeeSchedule() {
 
             {/* Billing Information */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Billing Information</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Billing Information</h2>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
@@ -284,7 +284,7 @@ export default function FeeSchedule() {
 
             {/* Cancellation Policy */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Cancellation Policy</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Cancellation Policy</h2>
               <div className="bg-orange-50 border border-orange-100 rounded-lg p-6">
                 <p className="text-gray-600 mb-4">
                   <strong className="text-gray-900">48 Hours Notice Required:</strong> Please provide
@@ -300,9 +300,9 @@ export default function FeeSchedule() {
 
             {/* Payment Methods */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Payment Options</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Payment Options</h2>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Support Coordination</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Support Coordination</h3>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3">Plan-Managed</h4>
@@ -318,7 +318,7 @@ export default function FeeSchedule() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Access &amp; Review Consulting</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Access &amp; Review Consulting</h3>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3">Private Fee Basis</h4>
@@ -340,7 +340,7 @@ export default function FeeSchedule() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">NDIS Provider Setup &amp; Compliance Consulting</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">NDIS Provider Setup &amp; Compliance Consulting</h3>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3">Private Fee Basis</h4>

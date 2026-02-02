@@ -130,13 +130,13 @@ export function CallbackForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 text-gray-900">
+    <section id="contact" className="py-12 sm:py-20 bg-gray-50 text-gray-900">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
           {/* Info Side */}
           <div className="flex flex-col">
-            <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p className="text-lg mb-8 opacity-90">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Ready to Get Started?</h2>
+            <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
               Request a call back and one of our experienced Support Coordinators will contact you within 24 hours to discuss your needs.
             </p>
 
@@ -151,21 +151,21 @@ export function CallbackForm() {
                   <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
                     <Check className="text-white" size={16} />
                   </div>
-                  <span className="text-lg">{benefit}</span>
+                  <span className="text-base sm:text-lg">{benefit}</span>
                 </li>
               ))}
               <div className='flex items-center gap-3'>
                 <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
                   <Phone className="text-white" size={16} />
                 </div>
-                <span className="text-lg">{siteConfig.phone}</span>
+                <span className="text-base sm:text-lg">{siteConfig.phone}</span>
               </div>
 
               <div className='flex items-center gap-3'>
                 <div className="flex-shrink-0 w-6 h-6 bg-brand rounded-full flex items-center justify-center">
                   <LucideMail className="text-white" size={16} />
                 </div>
-                <span className="text-lg">{siteConfig.email}</span>
+                <span className="text-base sm:text-lg">{siteConfig.email}</span>
               </div>
             </ul>
 
@@ -181,7 +181,7 @@ export function CallbackForm() {
           </div>
 
           {/* Form Side */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 rounded-lg p-8 shadow-2xl">
+          <div className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 rounded-lg p-6 sm:p-8 shadow-2xl">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">

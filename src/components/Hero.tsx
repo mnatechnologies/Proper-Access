@@ -21,10 +21,10 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
             {siteConfig.hero.title}
           </h1>
-          <p className="text-lg md:text-xl mb-10 opacity-90 animate-fadeInUp animation-delay-200">
+          <p className="text-base sm:text-lg md:text-xl mb-10 opacity-90 animate-fadeInUp animation-delay-200">
             {siteConfig.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp animation-delay-400">

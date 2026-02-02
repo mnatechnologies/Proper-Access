@@ -6,8 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="Requested Changes v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/provider-consulting/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/provider-consulting/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service-agreement/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service-agreement/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CallbackForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CallbackForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FAQ.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +148,10 @@
       <workItem from="1769490721763" duration="570000" />
       <workItem from="1769504374450" duration="44000" />
       <workItem from="1769662714123" duration="1901000" />
-      <workItem from="1769747348887" duration="396000" />
+      <workItem from="1769747348887" duration="907000" />
+      <workItem from="1769756606224" duration="24000" />
+      <workItem from="1769764769110" duration="29000" />
+      <workItem from="1770066396348" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="some requested changes implemented">
       <option name="closed" value="true" />
@@ -183,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769664417416</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Requested Changes v2">
+      <option name="closed" value="true" />
+      <created>1769747862197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769747862197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

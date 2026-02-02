@@ -36,10 +36,10 @@ export default function SupportCoordination() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-20 md:py-32">
+      <section className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-12 sm:py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp">
               NDIS Support Coordination
             </h1>
             <p className="text-lg md:text-xl mb-10 opacity-90 animate-fadeInUp animation-delay-200">
@@ -58,10 +58,10 @@ export default function SupportCoordination() {
       </section>
 
       {/* What It Is Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               What It Is
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -75,9 +75,9 @@ export default function SupportCoordination() {
       </section>
 
       {/* What's Included Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-4">
             What&apos;s Included
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -109,12 +109,12 @@ export default function SupportCoordination() {
       </section>
 
       {/* Who It's For & How It's Delivered Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-12">
             {/* Who It's For */}
             <div className="bg-gray-900 p-10 rounded-lg text-white shadow-lg">
-              <h2 className="text-3xl font-bold mb-6">Who It&apos;s For</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Who It&apos;s For</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="text-brand flex-shrink-0 mt-1" size={24} />
@@ -133,7 +133,7 @@ export default function SupportCoordination() {
 
             {/* How It's Delivered */}
             <div className="bg-brand p-10 rounded-lg text-white shadow-lg">
-              <h2 className="text-3xl font-bold mb-6">How It&apos;s Delivered</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">How It&apos;s Delivered</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="text-black flex-shrink-0 mt-1" size={24} />

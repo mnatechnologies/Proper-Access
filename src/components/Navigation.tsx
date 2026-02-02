@@ -36,7 +36,7 @@ export function Navigation() {
     { href: "/#eligibility", label: "Eligibility", type: "link" },
     { href: "/#faq", label: "FAQ", type: "link" },
     { href: "/about", label: "About", type: "link" },
-    { href: "#contact", label: "Contact", type: "link" },
+    { href: "/#contact", label: "Contact", type: "link" },
   ];
 
   return (
@@ -44,13 +44,14 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" className="w-24 sm:w-32 md:w-36">
             <Image
               src="/Vista Logos (2)/colored-logo.png"
               alt={siteConfig.businessName}
               width={150}
               height={150}
               priority
+              className="w-full h-auto"
             />
           </Link>
 
@@ -114,12 +115,12 @@ export function Navigation() {
             >
               Fee Schedule
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="bg-brand text-white px-6 py-2.5 rounded-md font-semibold hover:bg-brand-dark transition-colors"
             >
               Request a Call Back
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
