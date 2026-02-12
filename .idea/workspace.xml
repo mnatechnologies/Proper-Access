@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="Requested Changes v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/access-consulting/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/disclaimer/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fee-schedule/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/privacy-policy/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/provider-consulting/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/provider-consulting/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/service-agreement/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service-agreement/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/support-coordination/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CallbackForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CallbackForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EligibilitySteps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FAQ.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +136,8 @@
       <workItem from="1769756606224" duration="24000" />
       <workItem from="1769764769110" duration="29000" />
       <workItem from="1770066396348" duration="1263000" />
+      <workItem from="1770858703512" duration="645000" />
+      <workItem from="1770859376698" duration="3909000" />
     </task>
     <task id="LOCAL-00001" summary="some requested changes implemented">
       <option name="closed" value="true" />
