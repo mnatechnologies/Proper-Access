@@ -16,7 +16,7 @@ export const siteConfig = {
 
   // Social Media
   social: {
-    facebook: "#",
+    facebook: "https://www.facebook.com/profile.php?id=61588073128625",
     instagram: "#",
     linkedin: "#",
   },

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="Requested Changes v2">
+    <list default="true" id="268d19d2-d37b-4f20-be0c-291c453a8f69" name="Changes" comment="Production ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/site.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/site.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="71" />
+    <option name="cachedIndexableFilesCount" value="81" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -137,7 +138,8 @@
       <workItem from="1769764769110" duration="29000" />
       <workItem from="1770066396348" duration="1263000" />
       <workItem from="1770858703512" duration="645000" />
-      <workItem from="1770859376698" duration="3909000" />
+      <workItem from="1770859376698" duration="3938000" />
+      <workItem from="1770864918292" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="some requested changes implemented">
       <option name="closed" value="true" />
@@ -195,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769747862197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Production ready">
+      <option name="closed" value="true" />
+      <created>1770864748923</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770864748923</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +216,7 @@
     <MESSAGE value="Most changes in place." />
     <MESSAGE value="Requested Changes" />
     <MESSAGE value="Requested Changes v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Requested Changes v2" />
+    <MESSAGE value="Production ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Production ready" />
   </component>
 </project>
