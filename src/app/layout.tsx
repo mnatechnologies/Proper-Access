@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     siteName: "Proper Access",
     locale: "en_AU",
     type: "website",
-    images: ["/Vista Logos (1)/colored-logo.png"],
+    images: ["/Vista Logos (2)/colored-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Proper Access NDIS Support Coordination | Expert Support Services Australia Wide",
     description:
       "Professional NDIS Support Coordination services helping participants across Australia navigate their NDIS journey with confidence and dignity.",
-    images: ["/Vista Logos (1)/colored-logo.png"],
+    images: ["/Vista Logos (2)/colored-logo.png"],
   },
 };
 
