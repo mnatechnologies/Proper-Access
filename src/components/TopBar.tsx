@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 
 export function TopBar() {
   return (
-    <div className="bg-gray-900 text-white py-2 sm:py-3 overflow-hidden">
+    <div className="bg-black text-white py-2 sm:py-3 overflow-hidden">
       <div className="animate-marquee whitespace-nowrap flex items-center">
         {/* Duplicate content twice for seamless loop */}
         {[...Array(2)].map((_, i) => (
